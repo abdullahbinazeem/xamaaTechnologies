@@ -39,7 +39,11 @@ const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
       </div>
       <div className="gap-5 lg:gap-10 md:flex hidden">
         {links.map((linkItem) => (
-          <Link href={linkItem.url} className="lg:text-xl text-lg font-medium">
+          <Link
+            href={linkItem.url}
+            key={linkItem.url}
+            className="lg:text-xl text-lg font-medium"
+          >
             {linkItem.text}
           </Link>
         ))}
@@ -77,6 +81,7 @@ const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
             {links.map((linkItem) => (
               <Link
                 href={linkItem.url}
+                key={linkItem.url}
                 className="lg:text-xl text-lg font-medium"
                 onClick={() => {
                   setNavigation(!navigation);
