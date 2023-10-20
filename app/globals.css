@@ -16,3 +16,7 @@
   opacity: 20%;
   background-clip: text;
 }
+
+input {
+  all: unset;
+}

@@ -51,26 +51,31 @@ export default function Home() {
               <h1 className="xl:text-6xl text-5xl font-black">
                 Test-Auto Labs
               </h1>
-              <p className=" inline-block rounded-lg mt-6 xl:text-xl text-lg  font-semibold xl:p-5 p-3 bg-[#1F1F1F]">
-                <span className="font-black text-[#8AFFB9] mr-3">NEW!</span>
-                Crash Course tutorial for Selenium
-              </p>
+              <Link
+                href="https://youtube.com/playlist?list=PLqi6r2vSamFM1V6mt6fNJmAmdAtnR7WK7&si=U16y7L3uf_szSPpi"
+                target="blank"
+              >
+                <p className=" inline-block rounded-lg mt-6 xl:text-xl text-lg  font-semibold xl:p-5 p-3 bg-[#1F1F1F] hover:scale-110 transition-all">
+                  <span className="font-black text-[#8AFFB9] mr-3">NEW!</span>
+                  Test Automation Fundamentals-Selenium
+                </p>
+              </Link>
               <p className="font-semibold mt-8 lg:max-w-[400px] xl:text-xl text-lg ">
                 Zero to Hero QA trainings and consultation, get ready to learn
                 industry standards.
               </p>
-              <div className="mt-10">
+              <div className="mt-10 hover:scale-110 transition-all hover:translate-x-[5%]">
                 <Link
                   href="/testauto-labs"
-                  className="xl:text-xl text-lg  py-4 px-6 bg-[#8AFFB9] text-[#1F1F1F] font-bold rounded-md"
+                  className="xl:text-xl text-lg  py-4 px-6 bg-[#8AFFB9] text-[#1F1F1F] font-bold rounded-md "
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div>
+            {/* <div>
               <h1 className="xl:text-6xl text-5xl font-black">Developments</h1>
-              <p className=" inline-block rounded-lg mt-6 xl:text-xl text-lg font-semibold xl:p-5 p-3 bg-[#1F1F1F]">
+              <p className=" inline-block rounded-lg mt-6 xl:text-xl text-lg font-semibold xl:p-5 p-3 bg-[#1F1F1F] ">
                 <span className="font-black text-[#8AFFB9] mr-3">
                   JUMP START!
                 </span>
@@ -83,12 +88,13 @@ export default function Home() {
               <div className="mt-10">
                 <Link
                   href="/"
+                  target="blank"
                   className="xl:text-xl text-lg py-4 px-6 bg-[#8AFFB9] text-[#1F1F1F] font-bold rounded-md"
                 >
                   Learn More
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </Container>
       </div>
