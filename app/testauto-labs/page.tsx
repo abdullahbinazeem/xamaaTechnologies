@@ -77,22 +77,22 @@ const page = ({}) => {
               alt="globe"
               width={150}
               height={150}
-              className="text-center mx-auto mb-10"
+              className="text-center mx-auto mb-10 md:block hidden"
             />
-            <h1 className="xl:text-8xl lg:text-7xl text-6xl font-black">
-              Let&apos;s start your QA !
+            <h1 className="xl:text-8xl lg:text-7xl text-5xl font-black">
+              QA Capacity Building
             </h1>
-            <p className="m-auto font-black mt-2 xl:text-3xl lg:text-2xl text-xl">
-              Automation? Regression Testing? Professional Course?
+            <p className="md:m-auto font-black mt-4 xl:text-3xl lg:text-2xl text-xl text-left">
+              Test Automation Certifications
             </p>
             <form className="w-full text-center mt-10">
               <div className="max-w-[600px] mx-auto bg-[#13221E]  py-5 text-black rounded-[50px] flex px-5 lg:px-10">
                 <input
                   type="text"
-                  className="basis-2/3  text-[#DAFCE7] lg:text-xl md:text-lg text-md font-bold opacity-100 bg-[#13221E] text-left  box-border"
+                  className="basis-3/4 md:basis-2/3  text-[#DAFCE7] lg:text-xl md:text-lg text-sm font-bold opacity-100 bg-[#13221E] text-left  box-border"
                   placeholder="Enter your email"
                 />
-                <button className="basis-1/3 font-black  bg-[#8AFFB9] flex-1 text-center rounded-[50px] py-4">
+                <button className="basis-1/4 md:basis-basis-1/3 font-black xl:text-lg md:text-md text-sm bg-[#8AFFB9] flex-1 text-center rounded-[50px] py-2 md:py-4">
                   Get Started
                 </button>
               </div>
@@ -112,7 +112,7 @@ const page = ({}) => {
           <div className="mt-20 xl:px-30 lg:px-20 px-5">
             <ul>
               <li className="flex gap-5">
-                <div className="aspect-square lg:w-36 lg:h-36 h-24 w-24  relative">
+                <div className="aspect-square lg:w-36 lg:h-36 h-24 w-24  relative md:block hidden">
                   <Image src="/fundamental-icon.png" alt="" fill />
                 </div>
                 <div>
