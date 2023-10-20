@@ -33,6 +33,8 @@ import cypress from "../../public/icons/cypress.png";
 import gatling from "../../public/icons/gatling.png";
 import jmeter from "../../public/icons/jmeter.svg";
 
+import auto from "../../public/fundamental-icon.png";
+
 const Icons = [
   {
     name: "appium",
@@ -113,7 +115,7 @@ const page = ({}) => {
             <ul>
               <li className="flex gap-5">
                 <div className="aspect-square lg:w-36 lg:h-36 h-24 w-24  relative md:block hidden">
-                  <Image src="/fundamental-icon.png" alt="" fill />
+                  <Image src={auto} alt="" fill />
                 </div>
                 <div>
                   <h2 className="xl:text-2xl lg:text-xl text-lg font-black text-[#8AFFB9]">
