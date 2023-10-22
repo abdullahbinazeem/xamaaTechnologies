@@ -75,7 +75,7 @@ const page = () => {
           Our Catalog
         </h1>
         <div className="mt-10 md:mt-20 w-full">
-          <div className=" md:justify-center md:gap-20 justify-evenly md:flex hidden">
+          {/* <div className=" md:justify-center md:gap-20 justify-evenly md:flex hidden">
             <p
               className="hover:scale-105 transition-all md:text-lg font-bold p-4 md:py-4 md:px-6 rounded-3xl bg-[#bdffd8] cursor-pointer "
               onClick={() => {
@@ -100,7 +100,7 @@ const page = () => {
             >
               Certifcations
             </p>
-          </div>
+          </div> */}
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10 md:mt-20 gap-10">
             <div className="w-full bg-white rounded-xl divide-y-2">
               <div className="rounded-t-xl relative w-full  aspect-video overflow-hidden">
