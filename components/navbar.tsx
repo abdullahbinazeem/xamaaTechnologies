@@ -26,12 +26,12 @@ const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
   const [navigation, setNavigation] = useState(false);
 
   return (
-    <div className="flex relative justify-between items-center py-8 px-10 rounded-2xl bg-[#13221E] max-w-[1280px] mx-10 xl:m-auto">
+    <div className="flex z-[100] relative justify-between items-center py-8 px-5 md:px-10 rounded-2xl bg-[#13221E] max-w-[1280px] mx-5 md:mx-10 xl:m-auto">
       <div className={montserrat.className}>
         <a href="/" className="cursor-pointer">
-          <h2 className=" uppercase text-3xl lg:text-[40px] font-black leading-5 ">
+          <h2 className=" uppercase text-2xl md:text-3xl lg:text-[40px] font-black leading-5 ">
             Xamaa <br />
-            <span className="uppercase text-lg lg:text-xl text-[#8AFFB9] font-black">
+            <span className="uppercase text-base md:text-lg lg:text-xl text-[#8AFFB9] font-black">
               {logo}
             </span>
           </h2>
@@ -48,7 +48,7 @@ const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
           </Link>
         ))}
       </div>
-      <div className="lg:hidden block cursor-pointer">
+      <div className="md:hidden block cursor-pointer">
         {!navigation ? (
           <Menu
             color="white"

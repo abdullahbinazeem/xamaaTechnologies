@@ -30,7 +30,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
-      <div className="relative text-white min-h-[100vh] bg-gradient-to-b from-[#213D36] to-[#12121D] py-10">
+      <div className="relative text-white min-h-[110vh] bg-gradient-to-b from-[#213D36] to-[#12121D] py-10">
         <SplashScreen text="Elevating TECH" />
         <Navbar
           links={navLinks}
@@ -38,15 +38,15 @@ export default function Home() {
           callToAction={{ text: "Get Started", url: "/" }}
         />
         <Container className="relative z-1">
-          <div className="flex my-20 lg:gap-0 gap-32 lg:m-0 lg:flex-row flex-col w-[100%] justify-between lg:h-[70vh] lg:items-center relative">
-            <div className="position absolute top-[25%] left-0 right-0 m-auto w-[5px] rounded-full h-[70%] bg-[#D0FFE3] lg:block hidden" />
-            <Image
-              src="globe.svg"
-              height={150}
-              width={150}
-              alt=""
-              className="absolute left-0 right-0 m-auto top-5 lg:block hidden"
-            />
+          <div className="position absolute top-[25%] left-0 right-0 m-auto w-[5px] rounded-full h-[70%] bg-[#D0FFE3] lg:block hidden" />
+          <Image
+            src="globe.svg"
+            height={150}
+            width={150}
+            alt=""
+            className="absolute left-0 right-0 m-auto top-5 lg:block hidden"
+          />
+          <div className="lg:divide-y-0  divide-y-[1px] flex my-40 lg:gap-0 gap-24 lg:m-0 lg:flex-row flex-col w-[100%] justify-between lg:h-[80vh] lg:items-center relative">
             <div>
               <h1 className="xl:text-6xl text-5xl font-black">
                 Test-Auto Labs
@@ -64,7 +64,7 @@ export default function Home() {
                 Zero to Hero QA trainings and consultation, get ready to learn
                 industry standards.
               </p>
-              <div className="mt-10 hover:scale-110 transition-all hover:translate-x-[5%]">
+              <div className="mt-10 hover:scale-110 transition-all hover:translate-x-[5%] ">
                 <Link
                   href="/testauto-labs"
                   className="xl:text-xl text-lg  py-4 px-6 bg-[#8AFFB9] text-[#1F1F1F] font-bold rounded-md "
@@ -73,7 +73,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {/* <div>
+            <div className="pt-16  lg:p-0">
               <h1 className="xl:text-6xl text-5xl font-black">Developments</h1>
               <p className=" inline-block rounded-lg mt-6 xl:text-xl text-lg font-semibold xl:p-5 p-3 bg-[#1F1F1F] ">
                 <span className="font-black text-[#8AFFB9] mr-3">
@@ -94,7 +94,7 @@ export default function Home() {
                   Learn More
                 </Link>
               </div>
-            </div> */}
+            </div>
           </div>
         </Container>
       </div>
