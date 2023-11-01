@@ -10,29 +10,24 @@ import { cn } from "@/libs/utils";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-interface navbarProps {
-  links: {
-    text: string;
-    url: string;
-  }[];
-  logo: string;
-  callToAction?: {
-    text: string;
-    url: string;
-  };
-}
+const links = [
+  {
+    name: "Home",
+    url: "/",
+  },
+];
 
-const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
+const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
 
   return (
-    <div className="flex z-[100] relative justify-between items-center py-8 px-5 md:px-10 rounded-2xl bg-[#13221E] max-w-[1280px] mx-5 md:mx-10 xl:m-auto">
+    <div className="text-white flex z-[100] relative justify-between items-center py-8 px-5 md:px-10 rounded-2xl  max-w-[1280px] mx-5 md:mx-10 xl:m-auto">
       <div className={montserrat.className}>
         <a href="/" className="cursor-pointer">
           <h2 className=" uppercase text-2xl md:text-3xl lg:text-[40px] font-black leading-5 ">
             Xamaa <br />
             <span className="uppercase text-base md:text-lg lg:text-xl text-[#8AFFB9] font-black">
-              {logo}
+              Developments
             </span>
           </h2>
         </a>
@@ -41,10 +36,10 @@ const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
         {links.map((linkItem) => (
           <Link
             href={linkItem.url}
-            key={linkItem.url + linkItem.text + "test-autolabs"}
-            className="lg:text-xl text-lg font-medium"
+            key={linkItem.url + linkItem.name + " developments"}
+            className="lg:text-xl text-lg font-medium hover:text-[#8AFFB9] hover:scale-110 transition-all"
           >
-            {linkItem.text}
+            {linkItem.name}
           </Link>
         ))}
       </div>
@@ -68,26 +63,25 @@ const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
             }}
           />
         )}
-
         <div
           className={cn(
             navigation
               ? "scale-y-100 translate-y-[110%]"
-              : "scale-y-0 translate-y-[110%]  pointer-events-none  ",
-            "transition-all z-10 absolute bottom-0  py-10 w-full left-0 bg-[#13221E] rounded-xl"
+              : "scale-y-[0] translate-y-[110%]  pointer-events-none  ",
+            "transition-all z-10 absolute bottom-0  py-10 w-full left-0 bg-[#fff] rounded-xl"
           )}
         >
-          <div className="flex flex-col px-10 gap-10">
+          <div className="flex flex-col px-10 gap-10 text-black font-black hover:translate-x-[5%] hover:scale-110 transition-all">
             {links.map((linkItem) => (
               <Link
                 href={linkItem.url}
-                key={linkItem.url + linkItem.text + "test-autolabs"}
+                key={linkItem.url + linkItem.name + " developments"}
                 className="lg:text-xl text-lg font-medium"
                 onClick={() => {
                   setNavigation(!navigation);
                 }}
               >
-                {linkItem.text}
+                {linkItem.name}
               </Link>
             ))}
           </div>
@@ -96,10 +90,10 @@ const Navbar: React.FC<navbarProps> = ({ links, logo, callToAction }) => {
 
       <div className="md:block hidden">
         <Link
-          href={callToAction?.url || "/"}
+          href="/"
           className="lg:text-xl text-lg py-3 lg:py-4 px-5 lg:px-10 border-[#8AFFB9] border-2 rounded-[40px] "
         >
-          {callToAction?.text}
+          Contact
         </Link>
       </div>
     </div>

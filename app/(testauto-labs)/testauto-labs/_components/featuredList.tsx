@@ -1,16 +1,16 @@
-import Banner from "@/app/_components/banner";
+import Banner from "./banner";
 import Container from "@/components/container";
 
 import Image from "next/image";
 
-import appium from ".././../../public/icons/appium.svg";
-import selenium from "../../../public/icons/selenium.svg";
-import cucumber from "../../../public/icons/cucumber.svg";
-import cypress from "../../../public/icons/cypress.png";
-import gatling from "../../../public/icons/gatling.png";
-import jmeter from "../../../public/icons/jmeter.svg";
+import appium from "@/public/icons/appium.svg";
+import selenium from "@/public/icons/selenium.svg";
+import cucumber from "@/public/icons/cucumber.svg";
+import cypress from "@/public/icons/cypress.png";
+import gatling from "@/public/icons/gatling.png";
+import jmeter from "@/public/icons/jmeter.svg";
 
-import auto from "../../../public/fundamental-icon.png";
+import auto from "@/public/fundamental-icon.png";
 
 import Link from "next/link";
 

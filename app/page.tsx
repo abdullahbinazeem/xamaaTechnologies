@@ -2,8 +2,8 @@ import Container from "@/components/container";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 
-import SplashScreen from "./_components/splash-screen";
-import Banner from "./_components/banner";
+import SplashScreen from "./(testauto-labs)/testauto-labs/_components/splash-screen";
+import Banner from "./(testauto-labs)/testauto-labs/_components/banner";
 
 const navLinks = [
   {
@@ -24,7 +24,6 @@ const navLinks = [
   },
 ];
 
-import { cn } from "@/libs/utils";
 import Link from "next/link";
 
 export default function Home() {
@@ -35,7 +34,7 @@ export default function Home() {
         <Navbar
           links={navLinks}
           logo="technologies"
-          callToAction={{ text: "Get Started", url: "/" }}
+          callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
         />
         <Container className="relative z-1">
           <div className="position absolute top-[25%] left-0 right-0 m-auto w-[5px] rounded-full h-[70%] bg-[#D0FFE3] lg:block hidden" />
@@ -75,20 +74,21 @@ export default function Home() {
             </div>
             <div className="pt-16  lg:p-0">
               <h1 className="xl:text-6xl text-5xl font-black">Developments</h1>
-              <p className=" inline-block rounded-lg mt-6 xl:text-xl text-lg font-semibold xl:p-5 p-3 bg-[#1F1F1F] ">
-                <span className="font-black text-[#8AFFB9] mr-3">
-                  JUMP START!
-                </span>
-                Your business online
-              </p>
+              <Link href="/developments">
+                <p className=" inline-block rounded-lg mt-6 xl:text-xl text-lg  font-semibold xl:p-5 p-3 bg-[#1F1F1F] hover:scale-110 transition-all">
+                  <span className="font-black text-[#8AFFB9] mr-3">
+                    JUMP START!
+                  </span>
+                  Your business online
+                </p>
+              </Link>
               <p className="xl:text-xl text-lg font-semibold mt-8 lg:max-w-[400px]">
                 Learn to harness the power of the internet and social media to
                 boost your business.
               </p>
-              <div className="mt-10">
+              <div className="mt-10 hover:scale-110 transition-all hover:translate-x-[5%] ">
                 <Link
-                  href="/"
-                  target="blank"
+                  href="/developments"
                   className="xl:text-xl text-lg py-4 px-6 bg-[#8AFFB9] text-[#1F1F1F] font-bold rounded-md"
                 >
                   Learn More

@@ -2,9 +2,9 @@ import Navbar from "@/components/navbar";
 
 import Image from "next/image";
 
-import SplashScreen from "../_components/splash-screen";
+import SplashScreen from "./_components/splash-screen";
 import Container from "@/components/container";
-import Banner from "../_components/banner";
+import Banner from "./_components/banner";
 import Link from "next/link";
 import FeaturedList from "./_components/featuredList";
 
@@ -26,7 +26,7 @@ const page = ({}) => {
         <Navbar
           links={navLinks}
           logo="Test-Auto Labs"
-          callToAction={{ text: "Get Started", url: "/" }}
+          callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
         />
         <SplashScreen text="Scalable Automation" />
         <Container className="z-[10] relative">
@@ -44,11 +44,16 @@ const page = ({}) => {
             <p className="md:m-auto font-black mt-4 xl:text-3xl lg:text-2xl text-xl text-left">
               Test Automation Certifications
             </p>
-            <form className="w-full text-center mt-10">
+            <form
+              className="w-full text-center mt-10"
+              action="https://formsubmit.co/abdullahbinazeem06@gmail.com"
+              method="POST"
+            >
               <div className="max-w-[600px] mx-auto bg-[#13221E]  py-5 text-black rounded-[50px] flex px-5 lg:px-10">
                 <input
-                  type="text"
-                  className="basis-3/5 md:basis-2/3  text-[#DAFCE7] lg:text-xl md:text-lg text-sm font-bold opacity-100 bg-[#13221E] text-left  box-border"
+                  name="email"
+                  type="email"
+                  className="basis-3/5 md:basis-2/3  text-[#DAFCE7] md:text-base text-sm font-bold opacity-100 bg-[#13221E] text-left  box-border"
                   placeholder="Enter your email"
                 />
                 <button className="basis-2/5 min-w-[100px] md:basis-basis-1/3 font-black xl:text-lg md:text-md text-sm bg-[#8AFFB9] flex-1 text-center rounded-[50px] py-2 md:py-4">
