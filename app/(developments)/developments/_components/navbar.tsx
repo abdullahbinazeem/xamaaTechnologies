@@ -15,35 +15,47 @@ const links = [
     name: "Home",
     url: "/",
   },
+  {
+    name: "Services",
+    url: "/",
+  },
+  {
+    name: "Prices",
+    url: "/",
+  },
+  {
+    name: "Customers",
+    url: "/",
+  },
 ];
 
 const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
 
   return (
-    <div className="text-white flex z-[100] relative justify-between items-center py-8 px-5 md:px-10 rounded-2xl  max-w-[1280px] mx-5 md:mx-10 xl:m-auto">
+    <div className="absolute left-0 right-0 top-0 z-[100] mx-5 flex max-w-[1280px] items-center justify-between rounded-2xl px-5 py-8 text-white md:mx-5 lg:m-auto">
       <div className={montserrat.className}>
         <a href="/" className="cursor-pointer">
-          <h2 className=" uppercase text-2xl md:text-3xl lg:text-[40px] font-black leading-5 ">
+          <h2 className="text-2xl font-black uppercase leading-5 md:text-3xl lg:text-4xl">
             Xamaa <br />
-            <span className="uppercase text-base md:text-lg lg:text-xl text-[#8AFFB9] font-black">
+            <span className="text-base font-black uppercase text-[#8AFFB9] lg:text-xl">
               Developments
             </span>
           </h2>
         </a>
       </div>
-      <div className="gap-5 lg:gap-10 md:flex hidden">
+      <div className="hidden gap-8 md:flex lg:gap-10">
         {links.map((linkItem) => (
           <Link
             href={linkItem.url}
             key={linkItem.url + linkItem.name + " developments"}
-            className="lg:text-xl text-lg font-medium hover:text-[#8AFFB9] hover:scale-110 transition-all"
+            className="text-base font-medium transition-all hover:scale-110 hover:text-[#8AFFB9] lg:text-xl"
           >
             {linkItem.name}
           </Link>
         ))}
       </div>
-      <div className="md:hidden block cursor-pointer">
+      <div className="block cursor-pointer md:hidden">
         {!navigation ? (
           <Menu
             color="white"
@@ -66,17 +78,17 @@ const Navbar = () => {
         <div
           className={cn(
             navigation
-              ? "scale-y-100 translate-y-[110%]"
-              : "scale-y-[0] translate-y-[110%]  pointer-events-none  ",
-            "transition-all z-10 absolute bottom-0  py-10 w-full left-0 bg-[#fff] rounded-xl"
+              ? "translate-y-[110%] scale-y-100"
+              : "pointer-events-none translate-y-[110%]  scale-y-[0]  ",
+            "absolute bottom-0 left-0 z-10  w-full rounded-xl bg-[#111] p-4 py-10 transition-all",
           )}
         >
-          <div className="flex flex-col px-10 gap-10 text-black font-black hover:translate-x-[5%] hover:scale-110 transition-all">
+          <div className="flex flex-col gap-10 px-10 font-black text-white transition-all ">
             {links.map((linkItem) => (
               <Link
                 href={linkItem.url}
                 key={linkItem.url + linkItem.name + " developments"}
-                className="lg:text-xl text-lg font-medium"
+                className="text-lg font-medium transition-all hover:translate-x-[5%] hover:scale-110 lg:text-xl"
                 onClick={() => {
                   setNavigation(!navigation);
                 }}
@@ -88,10 +100,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="md:block hidden">
+      <div className="hidden md:block">
         <Link
           href="/"
-          className="lg:text-xl text-lg py-3 lg:py-4 px-5 lg:px-10 border-[#8AFFB9] border-2 rounded-[40px] "
+          className="rounded-[40px] border-2 border-[#8AFFB9] px-8 py-2 text-lg lg:px-12 lg:py-3 lg:text-xl "
         >
           Contact
         </Link>

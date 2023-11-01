@@ -22,41 +22,41 @@ const navLinks = [
 const page = ({}) => {
   return (
     <div className="overflow-x-hidden">
-      <div className="text-white relative h-[100vh] bg-gradient-to-b from-[#213D36] to-[#12121D] py-10">
+      <div className="relative h-[100vh] bg-gradient-to-b from-[#213D36] to-[#12121D] py-10 text-white">
         <Navbar
           links={navLinks}
           logo="Test-Auto Labs"
           callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
         />
         <SplashScreen text="Scalable Automation" />
-        <Container className="z-[10] relative">
-          <div className="grid place-content-center h-[60vh] w-full ">
+        <Container className="relative z-[10]">
+          <div className="grid h-[60vh] w-full place-content-center ">
             <Image
               src="globe.svg"
               alt="globe"
               width={150}
               height={150}
-              className="text-center mx-auto mb-10 md:block hidden"
+              className="mx-auto mb-10 hidden text-center md:block"
             />
-            <h1 className="xl:text-8xl lg:text-7xl text-5xl font-black">
+            <h1 className="text-5xl font-black lg:text-7xl xl:text-8xl">
               QA Capacity Building
             </h1>
-            <p className="md:m-auto font-black mt-4 xl:text-3xl lg:text-2xl text-xl text-left">
+            <p className="mt-4 text-left text-xl font-black md:m-auto lg:text-2xl xl:text-3xl">
               Test Automation Certifications
             </p>
             <form
-              className="w-full text-center mt-10"
+              className="mt-10 w-full text-center"
               action="https://formsubmit.co/abdullahbinazeem06@gmail.com"
               method="POST"
             >
-              <div className="max-w-[600px] mx-auto bg-[#13221E]  py-5 text-black rounded-[50px] flex px-5 lg:px-10">
+              <div className="mx-auto flex max-w-[600px]  rounded-[50px] bg-[#13221E] px-5 py-5 text-black lg:px-10">
                 <input
                   name="email"
                   type="email"
-                  className="basis-3/5 md:basis-2/3  text-[#DAFCE7] md:text-base text-sm font-bold opacity-100 bg-[#13221E] text-left  box-border"
+                  className="box-border basis-3/5  bg-[#13221E] text-left text-sm  text-[#DAFCE7] opacity-100 md:basis-2/3  md:text-base"
                   placeholder="Enter your email"
                 />
-                <button className="basis-2/5 min-w-[100px] md:basis-basis-1/3 font-black xl:text-lg md:text-md text-sm bg-[#8AFFB9] flex-1 text-center rounded-[50px] py-2 md:py-4">
+                <button className="md:basis-basis-1/3 md:text-md min-w-[100px] flex-1 basis-2/5 rounded-[50px] bg-[#8AFFB9] py-2 text-center text-sm font-black md:py-4 xl:text-lg">
                   Get Started
                 </button>
               </div>

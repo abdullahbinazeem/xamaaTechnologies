@@ -4,6 +4,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .text-gradient {
@@ -19,4 +20,107 @@
 
 input {
   all: unset;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #353535 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+@keyframes slideLarge {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-266%, 0, 0);
+  }
+}
+
+@keyframes slideMedium {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-400%, 0, 0);
+  }
+}
+
+@keyframes slideSmall {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-800%, 0, 0);
+  }
+}
+
+@media (min-width: 200px) {
+  .carousel {
+    animation: 20s slideSmall infinite linear;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    animation: 20s slideMedium infinite linear;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel {
+    animation: 20s slideLarge infinite linear;
+  }
+}
+
+.slider:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100%;
+  background: linear-gradient(to left, rgba(1, 1, 1, 0), #0404047a);
+  content: "";
+  z-index: 2;
+}
+.slider:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20vw;
+  height: 100%;
+  background: linear-gradient(to right, rgba(1, 1, 1, 0), #0404047a);
+  content: "";
+  z-index: 2;
+}
+
+.slider {
+  background-image: repeating-linear-gradient(
+      13deg,
+      #ffffff00,
+      #ffffff00 9.3px,
+      transparent 10px,
+      transparent 35.11px,
+      #ffffff00 37px
+    ),
+    repeating-linear-gradient(
+      103deg,
+      #fff,
+      #fff 9.3px,
+      transparent 10px,
+      transparent 35.11px,
+      #fff 37px
+    );
+  background-size:
+    2px 100%,
+    100% 2px,
+    2px 100%,
+    100% 2px;
+  background-position:
+    0 0,
+    0 0,
+    100% 0,
+    0 100%;
+  background-repeat: no-repeat;
 }

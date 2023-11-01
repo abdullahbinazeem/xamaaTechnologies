@@ -6,7 +6,7 @@ export default function DevelopmentLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative bg-black h-[100vh] overflow-x-hidden">
+    <div className="relative overflow-x-hidden">
       <Navbar />
       {children}
     </div>
