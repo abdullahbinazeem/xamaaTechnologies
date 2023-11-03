@@ -13,48 +13,48 @@ const navLinks = [
 ];
 export default function page() {
   return (
-    <div className="text-white bg-[#111] h-[100vh] overflow-x-hidden flex justify-center py-10">
+    <div className="flex h-[100vh] justify-center overflow-x-hidden bg-[#111] py-10 text-white">
       <div>
         <Navbar
           links={navLinks}
           logo="Test-Auto Labs"
           callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
         />
-        <div className="flex justify-center items-center w-screen mt-10 text-black">
-          <div className="container max-w-[1200px] mx-auto my-4 px-4 md:px-10  ">
-            <div className=" w-full p-8 my-4 md:px-12  lg:px-20  bg-white rounded-2xl shadow-2xl">
+        <div className="mt-10 flex w-screen items-center justify-center text-black">
+          <div className="container mx-auto my-4 max-w-[1200px] px-4 md:px-10  ">
+            <div className=" my-4 w-full rounded-2xl bg-white  p-8  shadow-2xl md:px-12 lg:px-20">
               <div className="flex">
-                <h1 className="font-bold uppercase text-5xl">
+                <h1 className="text-5xl font-bold uppercase">
                   Send us a <br /> message
                 </h1>
               </div>
               <form
-                action="https://formsubmit.co/abdullahbinazeem06@gmail.com"
+                action="https://formsubmit.co/azeemtariq@hotmail.com"
                 method="POST"
               >
-                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
                   <input
-                    className=" bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                    className=" focus:shadow-outline mt-2 rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
                     name="first name"
                     type="text"
                     placeholder="First Name*"
                     required
                   />
                   <input
-                    className=" bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                    className=" focus:shadow-outline mt-2 rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
                     name="last name"
                     type="text"
                     placeholder="Last Name"
                   />
                   <input
-                    className=" bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                    className=" focus:shadow-outline mt-2 rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
                     name="email"
                     type="email"
                     placeholder="Email*"
                     required
                   />
                   <input
-                    className=" bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                    className=" focus:shadow-outline mt-2 rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
                     name="phone number"
                     type="number"
                     placeholder="Phone"
@@ -64,14 +64,14 @@ export default function page() {
                   <textarea
                     name="message"
                     placeholder="Message*"
-                    className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                    className="focus:shadow-outline mt-2 h-32 w-full rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
                     required
                   ></textarea>
                 </div>
                 <div className="my-2 w-1/2 lg:w-1/4">
                   <button
-                    className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
-                      focus:outline-none focus:shadow-outline"
+                    className="focus:shadow-outline w-full rounded-lg bg-blue-900 p-3 text-sm font-bold uppercase tracking-wide 
+                      text-gray-100 focus:outline-none"
                   >
                     Send Message
                   </button>

@@ -46,7 +46,7 @@ const page = ({}) => {
             </p>
             <form
               className="mt-10 w-full text-center"
-              action="https://formsubmit.co/abdullahbinazeem06@gmail.com"
+              action="https://formsubmit.co/azeemtariq@hotmail.com"
               method="POST"
             >
               <div className="mx-auto flex max-w-[600px]  rounded-[50px] bg-[#13221E] px-5 py-5 text-black lg:px-10">
