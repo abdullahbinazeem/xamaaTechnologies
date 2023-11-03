@@ -30,7 +30,7 @@ const carousel = [
   },
 ];
 
-export default function Hero() {
+const Hero = () => {
   return (
     <div className="relative">
       <div className="absolute top-0 h-[50%] w-full md:right-0 md:top-0 md:h-full md:w-[50%]">
@@ -38,7 +38,7 @@ export default function Hero() {
           fill
           src={background}
           alt="background"
-          className="object-cover opacity-75"
+          className="object-cover opacity-40"
         />
       </div>
       <div className="grid min-h-[100vh] w-full bg-[#040404] text-white">
@@ -74,31 +74,35 @@ export default function Hero() {
             </form>
           </div>
         </Container>
-        <div className="slider relative pt-10">
-          <div className={`carousel whitespace-nowrap`}>
-            {carousel.map((item) => (
-              <Image
-                width={500}
-                height={300}
-                src={`/web-projects/${item.name}.jpg`}
-                alt={item.name}
-                className="inline-block w-[100vw] md:w-[50vw] lg:w-[33vw]"
-                key={item.name}
-              />
-            ))}
-            {carousel.map((item) => (
-              <Image
-                width={500}
-                height={300}
-                src={`/web-projects/${item.name}.jpg`}
-                alt={item.name}
-                className="inline-block w-[100vw] md:w-[50vw] lg:w-[33vw]"
-                key={item.name}
-              />
-            ))}
+        <a href="#works">
+          <div className="slider relative pt-10">
+            <div className={`carousel whitespace-nowrap`}>
+              {carousel.map((item) => (
+                <Image
+                  width={500}
+                  height={300}
+                  src={`/web-projects/${item.name}.jpg`}
+                  alt={item.name}
+                  className="inline-block w-[100vw] md:w-[50vw] lg:w-[33vw]"
+                  key={item.name}
+                />
+              ))}
+              {carousel.map((item) => (
+                <Image
+                  width={500}
+                  height={300}
+                  src={`/web-projects/${item.name}.jpg`}
+                  alt={item.name}
+                  className="inline-block w-[100vw] md:w-[50vw] lg:w-[33vw]"
+                  key={item.name}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
-}
+};
+
+export default Hero;

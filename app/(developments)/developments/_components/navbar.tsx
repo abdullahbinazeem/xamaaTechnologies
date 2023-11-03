@@ -13,14 +13,14 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const links = [
   {
     name: "Home",
-    url: "/",
+    url: "/developments",
   },
   {
     name: "Services",
-    url: "/",
+    url: "#services",
   },
   {
-    name: "Prices",
+    name: "Projects",
     url: "/",
   },
   {
