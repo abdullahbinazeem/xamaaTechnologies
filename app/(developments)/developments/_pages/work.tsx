@@ -63,6 +63,7 @@ const Work = () => {
               <ul className="flex justify-center gap-8 text-3xl font-bold sm:gap-12 lg:flex-col lg:justify-normal xl:gap-16 xl:text-4xl">
                 {samples.map((item, index) => (
                   <li
+                    key={item.title}
                     onClick={() => {
                       setSample(index);
                     }}
