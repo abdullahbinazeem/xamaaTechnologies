@@ -44,23 +44,16 @@ const page = ({}) => {
             <p className="mt-4 text-left text-xl font-black md:m-auto lg:text-2xl xl:text-3xl">
               Test Automation Certifications
             </p>
-            <form
-              className="mt-10 w-full text-center"
-              action="https://formsubmit.co/azeemtariq@hotmail.com"
-              method="POST"
-            >
+            <div className="min-w-[400px]: m-auto mt-10 w-[50%] text-center">
               <div className="mx-auto flex max-w-[600px]  rounded-[50px] bg-[#13221E] px-5 py-5 text-black lg:px-10">
-                <input
-                  name="email"
-                  type="email"
-                  className="box-border basis-3/5  bg-[#13221E] text-left text-sm  text-[#DAFCE7] opacity-100 md:basis-2/3  md:text-base"
-                  placeholder="Enter your email"
-                />
-                <button className="md:basis-basis-1/3 md:text-md min-w-[100px] flex-1 basis-2/5 rounded-[50px] bg-[#8AFFB9] py-2 text-center text-sm font-black md:py-4 xl:text-lg">
+                <a
+                  href="testauto-labs/contact"
+                  className="md:basis-basis-1/3 md:text-md min-w-[100px] flex-1 basis-2/5 rounded-[50px] bg-[#8AFFB9] py-2 text-center text-sm font-black md:py-4 xl:text-lg"
+                >
                   Get Started
-                </button>
+                </a>
               </div>
-            </form>
+            </div>
           </div>
         </Container>
       </div>
