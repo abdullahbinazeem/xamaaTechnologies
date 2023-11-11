@@ -21,13 +21,13 @@ const navLinks = [
 
 const page = ({}) => {
   return (
-    <div className="overflow-x-hidden">
-      <div className="relative h-[100vh] bg-gradient-to-b from-[#213D36] to-[#12121D] py-10 text-white">
-        <Navbar
-          links={navLinks}
-          logo="Test-Auto Labs"
-          callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
-        />
+    <div className="overflow-x-hidden bg-[#F5F5F5]">
+      <Navbar
+        links={navLinks}
+        logo="Test-Auto Labs"
+        callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
+      />
+      <div className="relative h-[90vh] py-10 text-black">
         <SplashScreen text="Scalable Automation" />
         <Container className="relative z-[10]">
           <div className="grid h-[60vh] w-full place-content-center ">
@@ -45,7 +45,7 @@ const page = ({}) => {
               Test Automation Certifications
             </p>
             <div className="min-w-[400px]: m-auto mt-10 w-[50%] text-center">
-              <div className="mx-auto flex max-w-[600px]  rounded-[50px] bg-[#13221E] px-5 py-5 text-black lg:px-10">
+              <div className="mx-auto flex max-w-[600px]  rounded-[50px] bg-[#e4e4e4] px-5 py-5 text-black lg:px-10">
                 <a
                   href="testauto-labs/contact"
                   className="md:basis-basis-1/3 md:text-md min-w-[100px] flex-1 basis-2/5 rounded-[50px] bg-[#8AFFB9] py-2 text-center text-sm font-black md:py-4 xl:text-lg"

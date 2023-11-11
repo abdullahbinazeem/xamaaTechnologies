@@ -28,24 +28,18 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
-      <div className="relative min-h-[110vh] bg-gradient-to-b from-[#213D36] to-[#12121D] py-10 text-white">
+    <div className="overflow-x-hidden bg-[#F5F5F5]">
+      <Navbar
+        links={navLinks}
+        logo="technologies"
+        callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
+      />
+      <div className="relative min-h-[90vh]   text-black">
         <SplashScreen text="Elevating TECH" />
-        <Navbar
-          links={navLinks}
-          logo="technologies"
-          callToAction={{ text: "Get Started", url: "/testauto-labs/contact" }}
-        />
+
         <Container className="z-1 relative">
-          <div className="position absolute left-0 right-0 top-[25%] m-auto hidden h-[70%] w-[5px] rounded-full bg-[#D0FFE3] lg:block" />
-          <Image
-            src="globe.svg"
-            height={150}
-            width={150}
-            alt=""
-            className="absolute left-0 right-0 top-5 m-auto hidden lg:block"
-          />
-          <div className="relative  my-40 flex w-[100%] flex-col justify-between gap-24 divide-y-[1px] lg:m-0 lg:h-[80vh] lg:flex-row lg:items-center lg:gap-0 lg:divide-y-0">
+          <div className="position absolute left-0 right-0 top-[25%] m-auto hidden h-[70%] w-[5px] rounded-full bg-[#111] lg:block" />
+          <div className="relative my-20 flex w-[100%] flex-col justify-between gap-24 divide-y-[1px] lg:m-0 lg:h-[70vh] lg:flex-row lg:items-center lg:gap-0 lg:divide-y-0 ">
             <div>
               <h1 className="text-5xl font-black xl:text-6xl">
                 Test-Auto Labs
@@ -54,8 +48,8 @@ export default function Home() {
                 href="https://youtube.com/playlist?list=PLqi6r2vSamFM1V6mt6fNJmAmdAtnR7WK7&si=U16y7L3uf_szSPpi"
                 target="blank"
               >
-                <p className=" mt-6 inline-block rounded-lg bg-[#1F1F1F] p-3  text-lg font-semibold transition-all hover:scale-110 xl:p-5 xl:text-xl">
-                  <span className="mr-3 font-black text-[#8AFFB9]">NEW!</span>
+                <p className=" mt-6 inline-block rounded-lg bg-[#e9e9e9] p-3  text-lg font-semibold transition-all hover:scale-110 xl:p-5 xl:text-xl">
+                  <span className="mr-3 font-black text-[#33a560]">NEW!</span>
                   Test Automation Fundamentals-Selenium
                 </p>
               </Link>
@@ -75,8 +69,8 @@ export default function Home() {
             <div className="pt-16  lg:p-0">
               <h1 className="text-5xl font-black xl:text-6xl">Developments</h1>
               <Link href="/developments">
-                <p className=" mt-6 inline-block rounded-lg bg-[#1F1F1F] p-3  text-lg font-semibold transition-all hover:scale-110 xl:p-5 xl:text-xl">
-                  <span className="mr-3 font-black text-[#8AFFB9]">
+                <p className=" mt-6 inline-block rounded-lg bg-[#e9e9e9] p-3  text-lg font-semibold transition-all hover:scale-110 xl:p-5 xl:text-xl">
+                  <span className="mr-3 font-black text-[#33a560]">
                     JUMP START!
                   </span>
                   Your business online
