@@ -13,7 +13,7 @@ const page = () => {
     <div className="overflow-hidden">
       <Hero />
       <div className="bg-[#F5F5F5]">
-        <Companies />
+        {/* <Companies /> */}
         <Work />
         <Solutions />
         <Customer />
