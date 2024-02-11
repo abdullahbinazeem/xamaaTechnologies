@@ -38,10 +38,10 @@ const Hero = () => {
           fill
           src={background}
           alt="background"
-          className="object-cover opacity-40"
+          className="object-cover opacity-70"
         />
       </div>
-      <div className="grid min-h-[100vh] w-full bg-[#040404] text-white">
+      <div className="grid min-h-[100vh] w-full bg-[#000000] text-white">
         <Container className="relative z-10 mt-[10vh] text-center">
           <div className="my-32">
             <h1 className="text-4xl font-bold sm:text-5xl md:text-7xl lg:text-8xl">
@@ -67,6 +67,16 @@ const Hero = () => {
                   placeholder="Enter your email"
                   required
                 />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://localhost:3000/developments"
+                ></input>
+                <input
+                  type="hidden"
+                  name="_autoresponse"
+                  value="Your online form was recieved by Xamaa Technologies. We will be in touch shortly!"
+                ></input>
                 <button className="md:basis-basis-1/3 md:text-md min-w-[100px] flex-1 basis-2/5 rounded-[50px] bg-[#8AFFB9] py-2 text-center text-sm font-black md:py-4 xl:text-lg">
                   Get Started
                 </button>

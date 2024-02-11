@@ -23,7 +23,7 @@ const services = [
     description:
       "Need a logo, business card, flyers, website designs, etc. With our experienced help we can help you create all those things!",
     icon: design,
-    bgColor: "#FFCDCA",
+    bgColor: "#ffdbd9",
   },
   {
     title: "Search Engine Optimization",
@@ -42,8 +42,8 @@ const services = [
 ];
 const Solutions = () => {
   return (
-    <div>
-      <Container className="mt-36 min-h-[100vh] pb-32">
+    <div className="md:min-h-[800px]">
+      <Container className="mt-36 min-h-[100vh] pb-32 ">
         <h1
           className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl"
           id="services"
@@ -71,8 +71,8 @@ const Solutions = () => {
                 />
               </div>
               <div className="basis-3/4">
-                <h1 className="text-2xl sm:text-4xl">{service.title}</h1>
-                <p className=" mt-5 w-full leading-[120%] text-[#464646] sm:text-lg md:w-[90%] lg:w-[70%]">
+                <h1 className="text-2xl sm:text-3xl">{service.title}</h1>
+                <p className=" mt-5 w-full leading-[120%] text-[#464646]  md:w-[90%] lg:w-[70%]">
                   {service.description}
                 </p>
               </div>

@@ -6,21 +6,21 @@ import Link from "next/link";
 
 import Container from "@/components/container";
 
-import LangfordmanSample from "@/public/samples/langfordman.png";
 import RaybarkwillSample from "@/public/samples/R2b.png";
 import SamosaKing from "@/public/samples/SamosaKing.png";
 import Eccomerce from "@/public/samples/Eccomerce.png";
+import Studily from "@/public/samples/Studily.jpg";
 
 import { MoveUpRight } from "lucide-react";
 import { cn } from "@/libs/utils";
 
 const samples = [
   {
-    title: "Tarp Fabrics Shop",
+    title: "AI Study App",
     description:
-      " Full E-commerce website for LangfordManFabrics company. Within the website you can add items to the cart, customize colors, and checkout via Credit Card.",
-    link: "https://langfordman.ca/",
-    img: LangfordmanSample,
+      "Manage notes, todos, and tasks. With an AI companion on your side, you can autocomplete sentences and customize it to your needs.",
+    link: "https://aistudily.vercel.app/",
+    img: Studily,
   },
   {
     title: "R2B Frontrow Group",
@@ -50,7 +50,7 @@ const Work = () => {
 
   return (
     <div id="works">
-      <Container className="min-h-[100vh] pt-40">
+      <Container className="h-screen pt-40 md:min-h-[800px]">
         <div>
           <h2 className="text-lg font-bold text-[#8AFFB9] sm:text-xl md:text-2xl lg:text-3xl">
             Why customers choose us!
@@ -72,6 +72,8 @@ const Work = () => {
                       index == sample
                         ? `border-b-4 border-[#00FF66] lg:border-l-8`
                         : "border-0 opacity-40",
+                      index == sample + 1 ? "clickme" : "",
+                      index == 0 && sample == 3 ? "clickme" : "",
                     )}
                   >
                     0{index + 1}

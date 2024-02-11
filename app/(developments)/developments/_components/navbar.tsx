@@ -12,20 +12,16 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 const links = [
   {
-    name: "Home",
-    url: "/developments",
-  },
-  {
     name: "Services",
     url: "#services",
   },
   {
     name: "Projects",
-    url: "/",
+    url: "#works",
   },
   {
     name: "Customers",
-    url: "/",
+    url: "#customers",
   },
 ];
 
@@ -35,7 +31,7 @@ const Navbar = () => {
   return (
     <div className="absolute left-0 right-0 top-0 z-[100] mx-5 flex max-w-[1280px] items-center justify-between rounded-2xl px-0 py-8 text-white sm:px-5 md:mx-5 lg:m-auto">
       <div className={montserrat.className}>
-        <a href="/" className="cursor-pointer">
+        <a href="/developments" className="cursor-pointer">
           <h2 className="text-2xl font-black uppercase leading-5 md:text-3xl lg:text-4xl">
             Xamaa <br />
             <span className="text-base font-black uppercase text-[#8AFFB9] lg:text-xl">

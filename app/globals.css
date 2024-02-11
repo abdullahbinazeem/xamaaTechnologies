@@ -30,6 +30,22 @@ select:-webkit-autofill {
   -webkit-text-fill-color: white !important;
 }
 
+.clickme {
+  animation: 1s clickme infinite linear;
+}
+
+@keyframes clickme {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(125%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
 @keyframes slideLarge {
   from {
     transform: translate3d(0, 0, 0);
