@@ -9,56 +9,84 @@ import Container from "@/components/container";
 
 const Contact = () => {
   return (
-    <div id="contact">
-      <Container className="">
-        <div className="relative grid place-content-center rounded-[50px] bg-white py-20">
+    <div id="contact" className="bg-white md:bg-transparent">
+      <Container className="mb-20">
+        <div className="relative grid place-content-center rounded-[50px] bg-white pb-10 pt-20 md:shadow-[20px_20px_5px_5px_#DFFBEA]">
           <Image
             src={banner}
             alt=""
-            className="absolute -left-5 -top-14 z-10 w-48"
+            className="absolute -left-12 -top-6 z-10 w-28 md:-left-4 md:-top-10 md:w-36 lg:-left-5 lg:-top-14 lg:w-48"
           />
-          <h1 className="text-5xl font-bold">Receive a Free UI sample now!</h1>
-          <h3 className="mt-4 text-center text-xl">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
+            Receive a Free UI sample now!
+          </h1>
+          <h3 className="mt-4 text-center md:text-lg lg:text-xl">
             Want to test us out? Grab a free design,
             <br /> no strings attached.
           </h3>
           <form
-            action="https://formsubmit.co/azeemtariq@hotmail.com"
+            action="https://formsubmit.co/abdullahbinazeem06@gmail.com"
             method="POST"
+            className="mt-12"
           >
-            <div className="flex w-full items-start">
-              <div className="flex h-full grow flex-col justify-between ">
+            <div className="flex w-full flex-col items-start gap-x-12 md:flex-row">
+              <div className="flex h-full w-full grow flex-col justify-between gap-y-5">
+                <div>
+                  <h2 className="mb-2 w-full text-lg font-semibold">
+                    Name{" "}
+                    <span className="text-2xl font-bold text-red-500">*</span>
+                  </h2>
+                  <input
+                    className="focus:shadow-outline box-border w-full rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
+                    name="first name"
+                    type="text"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <h2 className="mb-2 text-lg font-semibold">
+                    Email{" "}
+                    <span className="text-2xl font-bold text-red-500">*</span>
+                  </h2>
+                  <input
+                    className="focus:shadow-outline box-border w-full rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
                 <input
-                  className=" focus:shadow-outline rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
-                  name="first name"
-                  type="text"
-                  placeholder="First Name*"
-                  required
-                />
-
+                  type="hidden"
+                  name="_next"
+                  value="http://xaama.tech/developments"
+                ></input>
                 <input
-                  className=" focus:shadow-outline rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
-                  name="email"
-                  type="email"
-                  placeholder="Email*"
-                  required
-                />
+                  type="hidden"
+                  name="_autoresponse"
+                  value="Your online form was recieved by Xamaa Technologies. We will be in touch shortly!"
+                ></input>
               </div>
-              <div className="grow">
+              <div className="mt-4 flex w-full grow flex-col self-stretch md:mt-0">
+                <h2 className="mb-2 text-lg font-semibold">
+                  Description of project{" "}
+                  <span className="text-2xl font-bold text-red-500">*</span>
+                </h2>
                 <textarea
                   name="message"
-                  placeholder="Message*"
-                  className="focus:shadow-outline h-32 w-full rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
+                  placeholder="Message"
+                  className="focus:shadow-outline h-full max-h-[300px] min-h-[100px] w-full rounded-lg bg-gray-100 p-3 text-gray-900 focus:outline-none"
                   required
                 ></textarea>
               </div>
             </div>
-            <div className="my-2 w-1/2 lg:w-1/4">
+            <div className="my-6 text-center">
               <button
-                className="focus:shadow-outline w-full rounded-lg bg-blue-900 p-3 text-sm font-bold uppercase tracking-wide 
+                className="focus:shadow-outline  rounded-lg bg-[#5ad28a] px-5 py-3 font-bold uppercase tracking-wide 
                       text-gray-100 focus:outline-none"
               >
-                Send Message
+                Submit
               </button>
             </div>
           </form>

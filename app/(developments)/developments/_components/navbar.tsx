@@ -98,7 +98,7 @@ const Navbar = () => {
 
       <div className="hidden md:block">
         <Link
-          href="/"
+          href="#contact"
           className="rounded-[40px] border-2 border-[#8AFFB9] px-8 py-2 text-lg lg:px-12 lg:py-3 lg:text-xl "
         >
           Contact

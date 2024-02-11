@@ -81,7 +81,7 @@ const Solutions = () => {
         </div>
         <div className="mt-32 text-center transition-all hover:scale-110">
           <Link
-            href="/"
+            href="#contact"
             className="rounded-md bg-[#8AFFB9] px-14 py-5 text-lg font-bold "
           >
             Start Now

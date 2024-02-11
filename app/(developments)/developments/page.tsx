@@ -6,6 +6,7 @@ import Work from "./_pages/work";
 import Companies from "./_components/logo";
 import Customer from "./_pages/customers";
 import Contact from "./_pages/contact";
+import Footer from "./_pages/footer";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
         <Solutions />
         <Customer />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

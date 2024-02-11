@@ -70,7 +70,7 @@ const Hero = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://localhost:3000/developments"
+                  value="http://xaama.tech/developments"
                 ></input>
                 <input
                   type="hidden"
