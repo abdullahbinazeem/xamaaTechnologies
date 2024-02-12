@@ -6,9 +6,9 @@ import Link from "next/link";
 
 import Container from "@/components/container";
 
-import RaybarkwillSample from "@/public/samples/R2b.png";
-import SamosaKing from "@/public/samples/SamosaKing.png";
-import Eccomerce from "@/public/samples/Eccomerce.png";
+import RaybarkwillSample from "@/public/samples/R2b.jpg";
+import SamosaKing from "@/public/samples/SamosaKing.jpg";
+import Eccomerce from "@/public/samples/Eccomerce.jpg";
 import Studily from "@/public/samples/Studily.jpg";
 
 import { MoveUpRight } from "lucide-react";
