@@ -8,6 +8,7 @@ import Container from "@/components/container";
 
 import RaybarkwillSample from "@/public/samples/R2b.jpg";
 import SamosaKing from "@/public/samples/SamosaKing.jpg";
+import WheelzDriving from "@/public/samples/4WheelzDriving.jpg";
 import Eccomerce from "@/public/samples/Eccomerce.jpg";
 import Studily from "@/public/samples/Studily.jpg";
 
@@ -16,13 +17,6 @@ import { cn } from "@/libs/utils";
 
 const samples = [
   {
-    title: "AI Study App",
-    description:
-      "Manage notes, todos, and tasks. With an AI companion on your side, you can autocomplete sentences and customize it to your needs.",
-    link: "https://aistudily.vercel.app/",
-    img: Studily,
-  },
-  {
     title: "R2B Frontrow Group",
     description:
       "Consulting website for rugby coaching and training programs. Created for former national Canadian rugby player, Ray Barkwill. ",
@@ -30,11 +24,18 @@ const samples = [
     img: RaybarkwillSample,
   },
   {
-    title: "Samosa King",
+    title: "AI Study App",
     description:
-      "Food truck website for authentic pakistani food in Victoria, BC. View menu, their mission and contact them through the website.",
-    link: "https://www.alrahman.ca/",
-    img: SamosaKing,
+      "Manage notes, todos, and tasks. With an AI companion on your side, you can autocomplete sentences and customize it to your needs.",
+    link: "https://aistudily.vercel.app/",
+    img: Studily,
+  },
+  {
+    title: "4 Wheelz Driving",
+    description:
+      "Driving School website based in Langford Victoria. Book lessons, road tests, and training courses. ",
+    link: "https://4wheelzdriving.netlify.app/",
+    img: WheelzDriving,
   },
   {
     title: "E-Commerce Dashboard",
@@ -82,10 +83,7 @@ const Work = () => {
               </ul>
             </div>
             <div className="m-auto md:w-[80%] lg:absolute lg:right-10 lg:w-[60%] xl:-top-[20%] xl:right-0 2xl:right-[-5vw] 2xl:w-[75%]">
-              <Image
-                src={samples[sample].img}
-                alt="Tarp Fabrics Shop Samples"
-              />
+              <Image src={samples[sample].img} alt={samples[sample].title} />
             </div>
             <div className="relative mt-10 md:px-20 lg:mt-0 lg:p-0">
               <h2 className="text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
