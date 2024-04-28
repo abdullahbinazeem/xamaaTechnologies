@@ -5,8 +5,9 @@ import "./globals.css";
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Xamaa Technologies",
-  description: "Xamaa Technologies",
+  title: "Xamaa Developments",
+  description:
+    "Xamaa Developments provide Web development, design, and SEO services in Victoria, BC. We have collection of works you can view. You can request for a FREE UI design for your business.",
 };
 
 export default function RootLayout({

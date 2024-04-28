@@ -49,7 +49,7 @@ const Hero = () => {
               Manage <span className="text-[#8AFFB9]">Your Brand </span>
             </h1>
             <h2 className="mt-5  font-medium sm:text-lg md:text-xl lg:text-2xl">
-              At Xamaa Development we make{" "}
+              At Xamaa Developments we make{" "}
               <span className="text-[#8AFFB9]">beautiful, responsive</span>
               <br className="hidden sm:block" /> and especially{" "}
               <span className="text-[#8AFFB9]">AFFORDABLE</span> websites
@@ -70,7 +70,7 @@ const Hero = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://xaama.tech/developments"
+                  value="http://xaama.tech"
                 ></input>
                 <input
                   type="hidden"

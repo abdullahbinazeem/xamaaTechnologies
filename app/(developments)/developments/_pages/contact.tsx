@@ -60,7 +60,7 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://xaama.tech/developments"
+                  value="http://xaama.tech"
                 ></input>
                 <input
                   type="hidden"
