@@ -2,6 +2,7 @@ import Navbar from "./_components/navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://xaama.tech"),
   title: "Xamaa Developments",
   description:
     "Xamaa Development provide Web development, design, and SEO services in Victoria, BC. We have collection of works you can view. You can request for a FREE UI design for your business.",
