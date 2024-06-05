@@ -6,9 +6,10 @@ const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://xaama.tech"),
-  title: "Xamaa Developments",
+  keywords: ["Website Design", "Marketing", "SEO", "Langford", "Victoria"],
+  title: "Website Design & Marketing in Langford BC | Xamaa",
   description:
-    "Xamaa Developments provide Web development, design, and SEO services in Victoria, BC. We have collection of works you can view. You can request for a FREE UI design for your business.",
+    "We specialize in digital marketing strategy and website design that generates leads for your business. Contact us today for a free mockup.",
 };
 
 export default function RootLayout({

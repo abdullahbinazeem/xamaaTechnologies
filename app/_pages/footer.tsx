@@ -6,7 +6,7 @@ import Container from "@/components/container";
 
 const Footer = () => {
   return (
-    <div id="footer">
+    <footer id="footer">
       <Container className="bg-[#101010] pb-10 pt-20">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="#" className="mb-4 flex flex-col sm:mb-0">
@@ -44,7 +44,7 @@ const Footer = () => {
           . All Rights Reserved.
         </span>
       </Container>
-    </div>
+    </footer>
   );
 };
 

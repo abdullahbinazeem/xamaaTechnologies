@@ -1,10 +1,10 @@
-import Hero from "./(developments)/developments/_pages/hero";
-import Work from "./(developments)/developments/_pages/work";
-import Solutions from "./(developments)/developments/_pages/solutions";
-import Customer from "./(developments)/developments/_pages/customers";
-import Contact from "./(developments)/developments/_pages/contact";
-import Footer from "./(developments)/developments/_pages/footer";
-import Navbar from "./(developments)/developments/_components/navbar";
+import Hero from "./_pages/hero";
+import Work from "./_pages/work";
+import Solutions from "./_pages/solutions";
+import Customer from "./_pages/customers";
+import Contact from "./_pages/contact";
+import Footer from "./_pages/footer";
+import Navbar from "./_components/navbar";
 
 export default function Home() {
   return (
