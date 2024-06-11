@@ -11,6 +11,7 @@ import SamosaKing from "@/public/samples/SamosaKing.jpg";
 import WheelzDriving from "@/public/samples/4WheelzDriving.jpg";
 import Eccomerce from "@/public/samples/Eccomerce.jpg";
 import Studily from "@/public/samples/Studily.jpg";
+import AlbCanada from "@/public/samples/AlbCanada.jpg";
 
 import { MoveUpRight } from "lucide-react";
 import { cn } from "@/libs/utils";
@@ -24,11 +25,11 @@ const samples = [
     img: RaybarkwillSample,
   },
   {
-    title: "AI Study App",
+    title: "AlbCanada Construction",
     description:
-      "Manage notes, todos, and tasks. With an AI companion on your side, you can autocomplete sentences and customize it to your needs.",
-    link: "https://aistudily.vercel.app/",
-    img: Studily,
+      "User-friendly website for a leading roofing contractor - AlbCanada Constrction, highlighting their services and projects to attract new clients. The site is optimized for both desktop and mobile viewing.",
+    link: "https://albcanada.ca/",
+    img: AlbCanada,
   },
   {
     title: "4 Wheelz Driving",
