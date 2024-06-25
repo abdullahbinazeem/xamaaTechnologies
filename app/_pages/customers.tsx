@@ -11,7 +11,7 @@ import Container from "@/components/container";
 const Customer = () => {
   return (
     <div id="customers">
-      <Container className="-mb-20 h-screen pt-40 md:min-h-[800px]">
+      <Container className="h-screem my-32 md:min-h-[800px]">
         <div>
           <h2 className="text-lg font-bold text-[#8AFFB9] sm:text-xl md:text-2xl lg:text-3xl">
             What our customers are saying

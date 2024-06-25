@@ -7,22 +7,20 @@ import Link from "next/link";
 import Container from "@/components/container";
 
 import RaybarkwillSample from "@/public/samples/R2b.jpg";
-import SamosaKing from "@/public/samples/SamosaKing.jpg";
 import WheelzDriving from "@/public/samples/4WheelzDriving.jpg";
-import Eccomerce from "@/public/samples/Eccomerce.jpg";
-import Studily from "@/public/samples/Studily.jpg";
 import AlbCanada from "@/public/samples/AlbCanada.jpg";
+import TlcContracting from "@/public/samples/TlcContracting.jpg";
 
 import { MoveUpRight } from "lucide-react";
 import { cn } from "@/libs/utils";
 
 const samples = [
   {
-    title: "R2B Frontrow Group",
+    title: "TLC Contracting Inc.",
     description:
-      "Consulting website for rugby coaching and training programs. Created for former national Canadian rugby player, Ray Barkwill. ",
-    link: "http://r2bfrontrow.com/",
-    img: RaybarkwillSample,
+      "Work website for TLC Contracting Inc. A business that provides contracting services across Southern Vancouver Island. Includes multiples pages for services.",
+    link: "https://tlccontracting.ca/",
+    img: TlcContracting,
   },
   {
     title: "AlbCanada Construction",
@@ -32,18 +30,18 @@ const samples = [
     img: AlbCanada,
   },
   {
+    title: "R2B Frontrow Group",
+    description:
+      "Consulting website for rugby coaching and training programs. Created for former national Canadian rugby player, Ray Barkwill. ",
+    link: "http://r2bfrontrow.com/",
+    img: RaybarkwillSample,
+  },
+  {
     title: "4 Wheelz Driving",
     description:
       "Driving School website based in Langford Victoria. Book lessons, road tests, and training courses. ",
     link: "https://4wheelzdriving.netlify.app/",
     img: WheelzDriving,
-  },
-  {
-    title: "E-Commerce Dashboard",
-    description:
-      "Backend dashboard to manage your E-commerce site. Add products, categories, shipping methods, view orders and more.",
-    link: "https://freds-ecom-dashboard.vercel.app/",
-    img: Eccomerce,
   },
 ];
 
