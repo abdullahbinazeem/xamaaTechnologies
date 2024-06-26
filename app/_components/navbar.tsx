@@ -35,7 +35,7 @@ const Navbar = () => {
           <h2 className="text-2xl font-black uppercase leading-5 md:text-3xl lg:text-4xl">
             Xamaa <br />
             <span className="text-base font-black uppercase text-[#8AFFB9] lg:text-xl">
-              Developments
+              Website Design
             </span>
           </h2>
         </a>

@@ -14,7 +14,7 @@ const Footer = () => {
               Xamaa
             </span>
             <span className="mt-2  text-xl  font-black   uppercase text-[#8AFFB9]">
-              Developments
+              Website Design
             </span>
           </a>
           <ul className="mb-6 mt-10 flex flex-wrap items-center text-sm font-medium text-slate-200 sm:mb-0  sm:mt-0">

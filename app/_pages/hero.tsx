@@ -45,14 +45,17 @@ const Hero = () => {
         <Container className="relative z-10 mt-[10vh] text-center">
           <div className="my-32">
             <h1 className="text-4xl font-bold sm:text-5xl md:text-7xl lg:text-8xl">
-              Build, Grow, And <br />
-              Manage <span className="text-[#8AFFB9]">Your Brand </span>
+              Website Design & <br />
+              Marketing <span className="text-[#8AFFB9]">Services </span>
             </h1>
             <h2 className="mt-5  font-medium sm:text-lg md:text-xl lg:text-2xl">
-              At Xamaa Developments we make{" "}
-              <span className="text-[#8AFFB9]">beautiful, responsive</span>
+              Boost your online presence today with
+              <span className="text-[#8AFFB9]">
+                {" "}
+                Beautiful, Lead Generating
+              </span>
               <br className="hidden sm:block" /> and especially{" "}
-              <span className="text-[#8AFFB9]">AFFORDABLE</span> websites
+              <span className="text-[#8AFFB9]">Affordable</span> Websites
             </h2>
             <form
               className="mt-10 w-full text-center"
