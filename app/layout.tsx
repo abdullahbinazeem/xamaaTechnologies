@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
+
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,7 +28,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={bricolage.className}>{children}</body>
+      <head>
+        {/* <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-DTY88PT8F2"
+        ></script>
+        <script>
+          {` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DTY88PT8F2');
+  `}
+        </script> */}
+      </head>
+      <body className={bricolage.className}>
+        {children}
+        <GoogleAnalytics gaId="G-DTY88PT8F2" />
+      </body>
     </html>
   );
 }
